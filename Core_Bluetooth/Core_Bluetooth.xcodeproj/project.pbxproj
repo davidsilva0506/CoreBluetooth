@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		303ABC342AF3C3B8001C81CD /* Core_BluetoothApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303ABC332AF3C3B8001C81CD /* Core_BluetoothApp.swift */; };
-		303ABC362AF3C3B8001C81CD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303ABC352AF3C3B8001C81CD /* ContentView.swift */; };
+		303ABC362AF3C3B8001C81CD /* PeripheralsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303ABC352AF3C3B8001C81CD /* PeripheralsView.swift */; };
 		303ABC382AF3C3BA001C81CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 303ABC372AF3C3BA001C81CD /* Assets.xcassets */; };
 		303ABC3B2AF3C3BA001C81CD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 303ABC3A2AF3C3BA001C81CD /* Preview Assets.xcassets */; };
 		303ABC452AF3C3BA001C81CD /* Core_BluetoothTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303ABC442AF3C3BA001C81CD /* Core_BluetoothTests.swift */; };
 		303ABC4F2AF3C3BA001C81CD /* Core_BluetoothUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303ABC4E2AF3C3BA001C81CD /* Core_BluetoothUITests.swift */; };
 		303ABC512AF3C3BA001C81CD /* Core_BluetoothUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303ABC502AF3C3BA001C81CD /* Core_BluetoothUITestsLaunchTests.swift */; };
+		303ABC612AF3CB85001C81CD /* BluetoothViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303ABC602AF3CB85001C81CD /* BluetoothViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,7 @@
 /* Begin PBXFileReference section */
 		303ABC302AF3C3B8001C81CD /* Core_Bluetooth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Core_Bluetooth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		303ABC332AF3C3B8001C81CD /* Core_BluetoothApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core_BluetoothApp.swift; sourceTree = "<group>"; };
-		303ABC352AF3C3B8001C81CD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		303ABC352AF3C3B8001C81CD /* PeripheralsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeripheralsView.swift; sourceTree = "<group>"; };
 		303ABC372AF3C3BA001C81CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		303ABC3A2AF3C3BA001C81CD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		303ABC402AF3C3BA001C81CD /* Core_BluetoothTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Core_BluetoothTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +45,7 @@
 		303ABC4A2AF3C3BA001C81CD /* Core_BluetoothUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Core_BluetoothUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		303ABC4E2AF3C3BA001C81CD /* Core_BluetoothUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core_BluetoothUITests.swift; sourceTree = "<group>"; };
 		303ABC502AF3C3BA001C81CD /* Core_BluetoothUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core_BluetoothUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		303ABC602AF3CB85001C81CD /* BluetoothViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +96,9 @@
 		303ABC322AF3C3B8001C81CD /* Core_Bluetooth */ = {
 			isa = PBXGroup;
 			children = (
-				303ABC332AF3C3B8001C81CD /* Core_BluetoothApp.swift */,
-				303ABC352AF3C3B8001C81CD /* ContentView.swift */,
-				303ABC372AF3C3BA001C81CD /* Assets.xcassets */,
-				303ABC392AF3C3BA001C81CD /* Preview Content */,
+				303ABC5D2AF3CB4B001C81CD /* App */,
+				303ABC5E2AF3CB60001C81CD /* View */,
+				303ABC5F2AF3CB68001C81CD /* ViewModel */,
 			);
 			path = Core_Bluetooth;
 			sourceTree = "<group>";
@@ -125,6 +126,32 @@
 				303ABC502AF3C3BA001C81CD /* Core_BluetoothUITestsLaunchTests.swift */,
 			);
 			path = Core_BluetoothUITests;
+			sourceTree = "<group>";
+		};
+		303ABC5D2AF3CB4B001C81CD /* App */ = {
+			isa = PBXGroup;
+			children = (
+				303ABC372AF3C3BA001C81CD /* Assets.xcassets */,
+				303ABC332AF3C3B8001C81CD /* Core_BluetoothApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		303ABC5E2AF3CB60001C81CD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				303ABC392AF3C3BA001C81CD /* Preview Content */,
+				303ABC352AF3C3B8001C81CD /* PeripheralsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		303ABC5F2AF3CB68001C81CD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				303ABC602AF3CB85001C81CD /* BluetoothViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +284,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				303ABC362AF3C3B8001C81CD /* ContentView.swift in Sources */,
+				303ABC362AF3C3B8001C81CD /* PeripheralsView.swift in Sources */,
 				303ABC342AF3C3B8001C81CD /* Core_BluetoothApp.swift in Sources */,
+				303ABC612AF3CB85001C81CD /* BluetoothViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,7 +444,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Core_Bluetooth/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Core_Bluetooth/View/Preview Content\"";
 				DEVELOPMENT_TEAM = AD5867JV95;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -446,7 +474,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Core_Bluetooth/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Core_Bluetooth/View/Preview Content\"";
 				DEVELOPMENT_TEAM = AD5867JV95;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
